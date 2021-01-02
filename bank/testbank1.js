@@ -146,18 +146,12 @@ class bank {
 
         }
         // if (dataset[uname].username != uname) {
-
-
-
         // }
         // else {
 
         // }
 
         // alert("username  already exists")
-
-
-
         // console.log(dataset)
     }
 
