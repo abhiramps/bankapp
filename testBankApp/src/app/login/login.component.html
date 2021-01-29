@@ -1,0 +1,32 @@
+<div class=" container row" style="margin: 2.6%;">
+
+    <div id="box" class="col-3 form-group shadow-lg p-4 mb-2  rounded">
+        <!-- <h1 style="text-align:left; margin-top: 50px;">login</h1> -->
+
+        <div style=" width: 100%; margin-top: 100px; ">
+            <input (change)="onUserNameChange($event)" type="text" id="user" placeholder="user name"
+                class="form-control">
+        </div>
+        <label for="" id="lab" style="margin-left: 30px;"></label>
+
+        <div style=" width: 100%; ">
+            <input (change)="onPasswordChange($event)" type="password" id="pass" placeholder="password"
+                class="form-control">
+        </div>
+        <label for="" id="plab" style="margin-left: 30px;"></label>
+
+        <div style=" width: 100%;">
+            <button type="submit" (click)="login()" class="btn btn-primary bg-dark">login</button>
+        </div>
+
+
+        <div style="width: 100%;  margin-top: 20px;"><label style="color: grey;" for="">dont have an account?<a
+                    href="register1.html">Register</a></label></div>
+    </div>
+
+    <div class="col-5"> </div>
+
+    <div class="col-4"></div>
+
+
+</div>

@@ -50,7 +50,7 @@ class bank {
             window.location.href = "testhome.html"
 
         }
-        else if (user == 0) {
+        else if (user == 0)  {
             // alert("invalid password")
             let lab = document.querySelector("#plab");
             lab.textContent = " invalid password";

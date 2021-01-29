@@ -1,0 +1,47 @@
+<div class="container">
+    <input  (change)="onToDoChange($event)" type="text" id="inp">
+
+    <button (click)="click()" type="button" class="btn btn-primary">Add</button>
+
+    <ul>
+        <li *ngFor="let item  of  list">
+            
+            <app-todo (deleteTodo)="deleteTodo($event)" [todo]="item"></app-todo> </li>
+             
+    
+    </ul>
+
+</div>
+
+<!-- using template referencing -->
+
+<!-- <div class="container">
+    <input  type="text" id="inp" #input>
+
+    <button (click)="click(input.value)" type="button" class="btn btn-primary">Add</button>
+
+    <ul>
+        <li *ngFor="let item  of  list">
+            
+            <app-todo [todo]="item"></app-todo> </li>
+             
+    
+    </ul>
+
+</div> -->
+
+<!-- ******using ngmodel****** -->
+<!-- <div class="container">
+     <input  type="text" id="inp" [(ngModel)]="todo">   2 way data binging directive -->
+
+    <!-- <button (click)="click(todo)" type="button" class="btn btn-primary">Add</button>
+
+    <ul>
+        <li *ngFor="let item  of  list">
+            
+            <app-todo (delete)="delete($event)" [todo]="item"></app-todo> </li>
+             
+    
+    </ul>
+
+</div> -->
